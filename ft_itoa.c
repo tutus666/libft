@@ -34,11 +34,8 @@ char	*ft_itoa(int n)
 
 	neg = 0;
 	nb = n;
-	if (n < 0)
-	{
-		neg = 1;
+	if (n < 0 && ++neg)
 		nb = -n;
-	}
 	size = ft_size(nb) + neg;
 	s = malloc(size + 1);
 	if (!s)
