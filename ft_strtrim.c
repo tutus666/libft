@@ -30,6 +30,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	end;
 	size_t	i;
 
+	if (!s1 || !set)
+		return (0);
 	start = 0;
 	while (s1[start] && ft_is_incharset(set, s1[start]))
 		start++;
