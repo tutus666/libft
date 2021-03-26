@@ -21,9 +21,10 @@ B_OBJS	=	${B_SRCS:.c=.o}
 
 .c.o:
 		${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
+
 NAME	=	libft.a
 
-CC		=	clang
+CC		=	gcc
 
 CLFAGS	=	-Wall -Wextra -Werror
 
