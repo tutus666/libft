@@ -5,10 +5,7 @@ char	*ft_strdup(const char *s1)
 	char	*str;
 	size_t	n;
 
-	n = -1;
-	while (s1[++n])
-		;
-	str = malloc(n + 1);
+	str = malloc(ft_strlen(s1) + 1);
 	if (!str)
 		return (0);
 	n = -1;
